@@ -1,0 +1,10 @@
+[
+	{
+		"id": "TitleBackground",
+		"src": "assets/images/TitleBackground.jpg"
+	},
+	{
+		"id": "PlayButton",
+		"src": "assets/images/PlayButton.png"
+	}
+]

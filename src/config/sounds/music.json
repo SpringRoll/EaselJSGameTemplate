@@ -1,0 +1,10 @@
+{
+	"context": "music",
+	"path": "assets/sound/music/",
+	"sounds": [
+		{
+			"id": "BackgroundMusic",
+			"preload": true
+		}
+	]
+}
