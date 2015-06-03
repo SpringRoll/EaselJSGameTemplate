@@ -25,8 +25,8 @@
 	p.enterDone = function()
 	{
 		// Click either the background or the button
-		this.panel.playButton.on("click", this.onPlay);
-		this.panel.background.on("click", this.onPlay);
+		this.panel.playButton.addEventListener("click", this.onPlay);
+		this.panel.background.addEventListener("buttonPress", this.onPlay);
 		this.panel.background.cursor = "pointer";
 	};
 
@@ -37,12 +37,6 @@
 	 */
 	p.onPlay = function()
 	{
-		//Don't play music while in dev mode, only as
-		//a courtesy to the developer
-		if (RELEASE)
-		{
-			this.game.music = 'BackgroundMusic';
-		}
 		this.manager.next();
 	};
 
@@ -54,8 +48,8 @@
 	{
 		// Release event listeners
 		this.panel.background.cursor = null;
-		this.panel.background.off("click", this.onPlay);
-		this.panel.playButton.off("click", this.onPlay);
+		this.panel.background.removeEventListener("click", this.onPlay);
+		this.panel.playButton.removeEventListener("click", this.onPlay);
 	};
 
 	//Assign to namespace
