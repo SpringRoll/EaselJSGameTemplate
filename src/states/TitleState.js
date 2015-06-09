@@ -37,7 +37,7 @@
 	 */
 	p.onPlay = function()
 	{
-		this.manager.next();
+		this.nextState();
 	};
 
 	/**
