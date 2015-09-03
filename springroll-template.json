@@ -1,7 +1,7 @@
 {
 	"name": "EaselJS Game",
 	"id": "io.springroll.easeljs-game",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"extend": "io.springroll.default",
 	"github": "SpringRoll/EaselJSGameTemplate",
 	"required": [
@@ -13,6 +13,7 @@
 		"easeljs-display",
 		"easeljs-states",
 		"easeljs-animation",
+		"easeljs-ui",
 		"container-client"
 	]
 }
